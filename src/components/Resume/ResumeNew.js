@@ -15,6 +15,7 @@ const resumeLink =
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  // console.log(object);
 
   useEffect(() => {
     setWidth(window.innerWidth);
