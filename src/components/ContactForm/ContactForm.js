@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const emailSend = (e) => {
@@ -15,6 +16,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast("message send successfully");
         },
         (error) => {
           console.log(error.text);
@@ -33,6 +35,7 @@ const ContactForm = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
+              required
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -41,6 +44,7 @@ const ContactForm = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
+              required
             />
           </Form.Group>
 
@@ -50,6 +54,7 @@ const ContactForm = () => {
               as="textarea"
               name="message"
               type="password"
+              required
               placeholder="Message"
             />
           </Form.Group>
@@ -58,38 +63,6 @@ const ContactForm = () => {
           </Button>
         </fieldset>
       </Form>
-
-      {/* <div class="input-group mb-3">
-        <div class="input-group-append">
-          <span
-            class="input-group-text bg-transparent text-white border-0"
-            id="basic-addon2"
-          >
-            @example.com
-          </span>
-        </div>
-        <input
-          type="text"
-          class="form-control  bg-transparent"
-          placeholder="Enter your email"
-          name="email"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-      </div> */}
-      {/* <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text bg-transparent border-0 text-white">
-            Your Messages
-          </span>
-        </div>
-        <textarea
-          class="form-control bg-transparent"
-          name="message"
-          aria-label="With textarea"
-        ></textarea>
-      </div> */}
-      {/* <button className="btn btn-outline-info btn-lg mb-3">Send Message</button> */}
     </div>
   );
 };
