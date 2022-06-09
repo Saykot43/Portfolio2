@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div className=" container px-8 text-white ">
-      <h1 className=" text-white text-center">Drop Me To Your Message</h1>
+      <h1 className=" text-white text-center">Drop To Your Message</h1>
 
       <div class="input-group mb-3">
         <div class="input-group-append">
