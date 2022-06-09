@@ -2,8 +2,8 @@
   Portfolio Website - v2.0<br/>
   <a href="#" target="_blank">Saykot.tech</a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+<div>
+<img src="./Images/readme-img1.png" />
 </div>
 
 <br/>
