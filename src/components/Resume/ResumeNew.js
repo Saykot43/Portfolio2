@@ -11,7 +11,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/Saykot43/portfolio/master/src/Assets/Saykot Kumar Barmon.pdf";
+  "https://drive.google.com/drive/u/0/folders/1lXzIu1ZffsAl-yV8aPZjdlxuwSBC1S-k";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
