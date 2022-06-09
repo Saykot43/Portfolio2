@@ -2,10 +2,10 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className=" container px-8 text-white bg-transparent">
+    <div className=" container px-8 text-white ">
       <h1 className=" text-white text-center">Drop Me To Your Message</h1>
 
-      <div class="input-group mb-3 text-white">
+      <div class="input-group mb-3">
         <div class="input-group-append">
           <span
             class="input-group-text bg-transparent text-white border-0"
@@ -25,7 +25,7 @@ const ContactForm = () => {
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text bg-transparent border-0 text-white">
-            Your Message
+            Your Messages
           </span>
         </div>
         <textarea
